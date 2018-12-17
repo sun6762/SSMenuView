@@ -16,6 +16,7 @@
 		C4DD463621C26AC90080624F /* SSMenuViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD463521C26AC90080624F /* SSMenuViewTests.m */; };
 		C4DD464121C26AC90080624F /* SSMenuViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD464021C26AC90080624F /* SSMenuViewUITests.m */; };
 		C4DD465021C26AE30080624F /* SSMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD464F21C26AE30080624F /* SSMenuView.m */; };
+		C4DD465321C77D040080624F /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD465221C77D040080624F /* ItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		C4DD464221C26AC90080624F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4DD464E21C26AE30080624F /* SSMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMenuView.h; sourceTree = "<group>"; };
 		C4DD464F21C26AE30080624F /* SSMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMenuView.m; sourceTree = "<group>"; };
+		C4DD465121C77D040080624F /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		C4DD465221C77D040080624F /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61E2BE47F0877D5A0A670261 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C4DD461021C26AC70080624F = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 				C4DD463421C26AC90080624F /* SSMenuViewTests */,
 				C4DD463F21C26AC90080624F /* SSMenuViewUITests */,
 				C4DD461A21C26AC70080624F /* Products */,
+				61E2BE47F0877D5A0A670261 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +121,8 @@
 				C4DD462021C26AC70080624F /* ViewController.m */,
 				C4DD464E21C26AE30080624F /* SSMenuView.h */,
 				C4DD464F21C26AE30080624F /* SSMenuView.m */,
+				C4DD465121C77D040080624F /* ItemCell.h */,
+				C4DD465221C77D040080624F /* ItemCell.m */,
 				C4DD462221C26AC70080624F /* Main.storyboard */,
 				C4DD462521C26AC90080624F /* Assets.xcassets */,
 				C4DD462721C26AC90080624F /* LaunchScreen.storyboard */,
@@ -161,6 +174,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4DD464821C26AC90080624F /* Build configuration list for PBXNativeTarget "SSMenuViewTests" */;
 			buildPhases = (
+				7D0C8F457778F58BF1C1521C /* [CP] Check Pods Manifest.lock */,
 				C4DD462D21C26AC90080624F /* Sources */,
 				C4DD462E21C26AC90080624F /* Frameworks */,
 				C4DD462F21C26AC90080624F /* Resources */,
@@ -179,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4DD464B21C26AC90080624F /* Build configuration list for PBXNativeTarget "SSMenuViewUITests" */;
 			buildPhases = (
+				03B4A8196F30DD7F006AEE79 /* [CP] Check Pods Manifest.lock */,
 				C4DD463821C26AC90080624F /* Sources */,
 				C4DD463921C26AC90080624F /* Frameworks */,
 				C4DD463A21C26AC90080624F /* Resources */,
@@ -262,11 +277,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03B4A8196F30DD7F006AEE79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSMenuViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D0C8F457778F58BF1C1521C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSMenuViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4DD461521C26AC70080624F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DD465321C77D040080624F /* ItemCell.m in Sources */,
 				C4DD462121C26AC70080624F /* ViewController.m in Sources */,
 				C4DD465021C26AE30080624F /* SSMenuView.m in Sources */,
 				C4DD462C21C26AC90080624F /* main.m in Sources */,

@@ -19,10 +19,13 @@
 - (SSMenuView *)menuView{
     if (!_menuView) {
         _menuView = [SSMenuView new];
-        _menuView.delegate = self;
+//        _menuView.delegate = self;
         _menuView.contentHeight = 350.0;
     }
     return _menuView;
+}
+- (IBAction)button:(id)sender {
+    [self.menuView showInView:self.view];
 }
 
 - (NSInteger)menuTableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -42,7 +45,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+//    [self.view addSubview:self.menuView];
 }
 
 
