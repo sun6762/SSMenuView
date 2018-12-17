@@ -7,6 +7,7 @@
 //
 
 #import "SSMenuView.h"
+#import "ItemCell.h"
 #define SS_ScreenW [UIScreen mainScreen].bounds.size.width
 #define SS_ScreenH [UIScreen mainScreen].bounds.size.height
 
@@ -105,8 +106,9 @@ static CGFloat contentH = 300.0;
     if ([self.delegate respondsToSelector:@selector(menuTableView:cellForRowAtIndexPath:)]) {
         return [self.delegate menuTableView:tableView cellForRowAtIndexPath:indexPath];
     }else{
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ss"];
-        cell.backgroundColor = [UIColor redColor];
+        ItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ItemCellID"];
+//        cell.backgroundColor = [UIColor redColor];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
 }
@@ -115,7 +117,7 @@ static CGFloat contentH = 300.0;
     if ([self.delegate respondsToSelector:@selector(menuTableView:heightForRowAtIndexPath:)]) {
          return [self.delegate menuTableView:tableView heightForRowAtIndexPath:indexPath];
     }else{
-        return 44;
+        return 52;
     }
 }
 
@@ -127,7 +129,21 @@ static CGFloat contentH = 300.0;
     if ([self.delegate respondsToSelector:@selector(menuTableView:viewForHeaderInSection:)]) {
         return [self.delegate menuTableView:tableView viewForHeaderInSection:section];
     }else{
-        return [UIView new];
+        UIView *view = [UIView new];
+        view.backgroundColor = [UIColor whiteColor];
+        
+        UIButton *btn = [UIButton new];
+        [view addSubview:btn];
+        [btn setTitle:@"完成" forState:UIControlStateNormal];
+        btn.frame = CGRectMake(375 - 15 - 80, 5, 80, 30);
+        btn.backgroundColor = [UIColor redColor];
+        
+        UIView *line = [[UIView alloc] init];
+        line.frame = CGRectMake(0 ,39 , 375, 1);
+        line.layer.backgroundColor = [UIColor colorWithRed:229/255.0 green:229/255.0 blue:229/255.0 alpha:1].CGColor;
+        [view addSubview:line];
+        return view;
+        
     }
 }
 
@@ -135,7 +151,7 @@ static CGFloat contentH = 300.0;
     if ([self.delegate respondsToSelector:@selector(menuTableView:heightForHeaderInSection:)]) {
         return [self.delegate menuTableView:tableView heightForHeaderInSection:section];
     }else{
-        return 0.001;
+        return 40;
     }
 }
 
@@ -169,7 +185,7 @@ static CGFloat contentH = 300.0;
         _tbView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
         _tbView.delegate = self;
         _tbView.dataSource = self;
-        [_tbView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ss"];
+        [_tbView registerClass:[ItemCell class] forCellReuseIdentifier:@"ItemCellID"];
         _tbView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _tbView;

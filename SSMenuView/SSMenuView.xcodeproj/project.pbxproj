@@ -15,8 +15,12 @@
 		C4DD462C21C26AC90080624F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD462B21C26AC90080624F /* main.m */; };
 		C4DD463621C26AC90080624F /* SSMenuViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD463521C26AC90080624F /* SSMenuViewTests.m */; };
 		C4DD464121C26AC90080624F /* SSMenuViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD464021C26AC90080624F /* SSMenuViewUITests.m */; };
-		C4DD465021C26AE30080624F /* SSMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD464F21C26AE30080624F /* SSMenuView.m */; };
-		C4DD465321C77D040080624F /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD465221C77D040080624F /* ItemCell.m */; };
+		C4DD466221C784940080624F /* ic_cu_pay_ic_pay_tick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DD465621C784940080624F /* ic_cu_pay_ic_pay_tick@2x.png */; };
+		C4DD466321C784940080624F /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = C4DD465721C784940080624F /* Contents.json */; };
+		C4DD466421C784940080624F /* ic_cu_pay_ic_pay_tick@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DD465821C784940080624F /* ic_cu_pay_ic_pay_tick@3x.png */; };
+		C4DD466521C784940080624F /* ic_cu_pay_ic_pay_tick.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DD465921C784940080624F /* ic_cu_pay_ic_pay_tick.png */; };
+		C4DD466A21C784940080624F /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD466121C784940080624F /* ItemCell.m */; };
+		C4DD467021C784E60080624F /* SSMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD466E21C784E60080624F /* SSMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +57,14 @@
 		C4DD463C21C26AC90080624F /* SSMenuViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSMenuViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DD464021C26AC90080624F /* SSMenuViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMenuViewUITests.m; sourceTree = "<group>"; };
 		C4DD464221C26AC90080624F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4DD464E21C26AE30080624F /* SSMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMenuView.h; sourceTree = "<group>"; };
-		C4DD464F21C26AE30080624F /* SSMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMenuView.m; sourceTree = "<group>"; };
-		C4DD465121C77D040080624F /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
-		C4DD465221C77D040080624F /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
+		C4DD465621C784940080624F /* ic_cu_pay_ic_pay_tick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_cu_pay_ic_pay_tick@2x.png"; sourceTree = "<group>"; };
+		C4DD465721C784940080624F /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C4DD465821C784940080624F /* ic_cu_pay_ic_pay_tick@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_cu_pay_ic_pay_tick@3x.png"; sourceTree = "<group>"; };
+		C4DD465921C784940080624F /* ic_cu_pay_ic_pay_tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_cu_pay_ic_pay_tick.png; sourceTree = "<group>"; };
+		C4DD465F21C784940080624F /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		C4DD466121C784940080624F /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
+		C4DD466E21C784E60080624F /* SSMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMenuView.m; sourceTree = "<group>"; };
+		C4DD466F21C784E60080624F /* SSMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMenuView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,8 @@
 		C4DD461021C26AC70080624F = {
 			isa = PBXGroup;
 			children = (
+				C4DD465D21C784940080624F /* Code */,
+				C4DD465421C784940080624F /* Resources */,
 				C4DD461B21C26AC70080624F /* SSMenuView */,
 				C4DD463421C26AC90080624F /* SSMenuViewTests */,
 				C4DD463F21C26AC90080624F /* SSMenuViewUITests */,
@@ -119,10 +129,6 @@
 				C4DD461D21C26AC70080624F /* AppDelegate.m */,
 				C4DD461F21C26AC70080624F /* ViewController.h */,
 				C4DD462021C26AC70080624F /* ViewController.m */,
-				C4DD464E21C26AE30080624F /* SSMenuView.h */,
-				C4DD464F21C26AE30080624F /* SSMenuView.m */,
-				C4DD465121C77D040080624F /* ItemCell.h */,
-				C4DD465221C77D040080624F /* ItemCell.m */,
 				C4DD462221C26AC70080624F /* Main.storyboard */,
 				C4DD462521C26AC90080624F /* Assets.xcassets */,
 				C4DD462721C26AC90080624F /* LaunchScreen.storyboard */,
@@ -148,6 +154,36 @@
 				C4DD464221C26AC90080624F /* Info.plist */,
 			);
 			path = SSMenuViewUITests;
+			sourceTree = "<group>";
+		};
+		C4DD465421C784940080624F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD465521C784940080624F /* ic_selected.imageset */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4DD465521C784940080624F /* ic_selected.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD465721C784940080624F /* Contents.json */,
+				C4DD465621C784940080624F /* ic_cu_pay_ic_pay_tick@2x.png */,
+				C4DD465821C784940080624F /* ic_cu_pay_ic_pay_tick@3x.png */,
+				C4DD465921C784940080624F /* ic_cu_pay_ic_pay_tick.png */,
+			);
+			path = ic_selected.imageset;
+			sourceTree = "<group>";
+		};
+		C4DD465D21C784940080624F /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD465F21C784940080624F /* ItemCell.h */,
+				C4DD466121C784940080624F /* ItemCell.m */,
+				C4DD466F21C784E60080624F /* SSMenuView.h */,
+				C4DD466E21C784E60080624F /* SSMenuView.m */,
+			);
+			path = Code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +291,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DD466421C784940080624F /* ic_cu_pay_ic_pay_tick@3x.png in Resources */,
+				C4DD466321C784940080624F /* Contents.json in Resources */,
+				C4DD466521C784940080624F /* ic_cu_pay_ic_pay_tick.png in Resources */,
 				C4DD462921C26AC90080624F /* LaunchScreen.storyboard in Resources */,
 				C4DD462621C26AC90080624F /* Assets.xcassets in Resources */,
 				C4DD462421C26AC70080624F /* Main.storyboard in Resources */,
+				C4DD466221C784940080624F /* ic_cu_pay_ic_pay_tick@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,9 +361,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4DD465321C77D040080624F /* ItemCell.m in Sources */,
 				C4DD462121C26AC70080624F /* ViewController.m in Sources */,
-				C4DD465021C26AE30080624F /* SSMenuView.m in Sources */,
+				C4DD466A21C784940080624F /* ItemCell.m in Sources */,
+				C4DD467021C784E60080624F /* SSMenuView.m in Sources */,
 				C4DD462C21C26AC90080624F /* main.m in Sources */,
 				C4DD461E21C26AC70080624F /* AppDelegate.m in Sources */,
 			);
